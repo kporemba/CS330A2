@@ -31,7 +31,7 @@ body{
 	color: #FFFFFF;
 	align-content: center;
 	text-align: center;
-	flex-basis: 200px;
+	flex-basis: 30%;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -226,14 +226,8 @@ img {
         float: left;
         font-size: 1em;
     }
-    .SSD {
-        display: block;
-        width: 90%;
-        float: left;
-        font-size: 1em;
-    }
     h2 {
-        color: #F7D129;
+        color: #00ADEF;
         font-family: 'Roboto', sans-serif;
         font-size: 1.2em;
     }
@@ -251,7 +245,7 @@ img {
     	width: 100%;
 	}
 	.button {
-		background-color: #F7D129;
+		background-color: #F14C15;
 		padding: 7px;
 		margin: 25px;
 		border-radius: 10px;

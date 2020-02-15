@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed" rel="stylesheet">
     </head>
     <body>
+		<div style="position: absolute">
 		<div id="nav"> 
             <a href="home.html" class="navbutton">HOME</a>
             <a href="customers.html" class="navbutton">CUSTOMERS</a>
@@ -30,11 +31,12 @@
 			<h3>Employees Question</h3>
 				<p>SELECT EmployeeId, LastName, FirstName FROM employees WHERE EmployeeID IS 1 OR EmployeeID IS 2 ORDER BY FirstName;</p>
 			<h3>Orders Question</h3>
-				<p>SELECT CustomerName, Country, OrderID FROM Customers LEFT JOIN Orders on Orders.CustomerID = Customers.CustomerID WHERE Country is \"Mexico\";</p>
+				<p>SELECT CustomerName, Country, OrderID FROM Customers LEFT JOIN Orders on Orders.CustomerID = Customers.CustomerID WHERE Country is "Mexico";</p>
 			<h3>OrderDetails Question</h3>
 				<p>SELECT OrderDetailID, Orders.OrderID, Quantity, ShipperID FROM OrderDetails INNER JOIN Orders on OrderDetails.OrderID = Orders.OrderID WHERE ShipperID is 1;</p>
 		</div>
 	
 		<br/>
+		</div>
     </body>
 </html> 
