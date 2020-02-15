@@ -243,7 +243,7 @@ img {
     }
 	table {
     	border-collapse: collapse;
-    	width: 90%;
+    	width: 100%;
 		table-layout: fixed;
 	}
 	.button {
@@ -260,7 +260,3 @@ img {
   		margin: 5px 0;
 	}
 	
-	#tab{
-	
-	}
-}
