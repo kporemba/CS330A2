@@ -25,6 +25,7 @@ body{
 	position: sticky;
 	top: 0;
 	padding: 16px;
+	width:100vw;
 }
 
 .navbutton{
@@ -147,6 +148,10 @@ a{text-decoration: unset;}
 table {
     border-collapse: collapse;
     width: 100%;
+	table-layout: fixed;
+}
+tr{
+	word-wrap: break-word;
 }
 th, td {
     text-align: center;
@@ -236,13 +241,10 @@ img {
         padding-bottom: 10px;
         font-size: 1em;
     }
-	
-	.pic1 {
-		width: 60%;
-	}
 	table {
     	border-collapse: collapse;
-    	width: 100%;
+    	width: 90%;
+		table-layout: fixed;
 	}
 	.button {
 		background-color: #F14C15;
@@ -256,5 +258,9 @@ img {
 	#quiz-wrap h1 {
   		font-size: 22px;
   		margin: 5px 0;
+	}
+	
+	#tab{
+	
 	}
 }
