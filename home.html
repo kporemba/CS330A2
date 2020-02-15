@@ -1,0 +1,76 @@
+<!--Krystyna Poremba 20719178-->
+<!DOCTYPE html>
+<html style="width:fit-content;">
+    <head>
+		<meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="images/sql.png"/> 
+        <title>SQL</title>
+        <link rel="Stylesheet" href="style.css" type="text/css" href="scripts.js"> 
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+		<div id="nav"> 
+            <a id="alive1" href="home.html" class="navbutton">HOME</a>
+            <a href="customers.html" class="navbutton">CUSTOMERS</a>
+			<a href="employees.html" class="navbutton">EMPLOYEES</a>
+			<a href="orders.html" class="navbutton">ORDERS</a>
+			<a href="orderDetails.html" class="navbutton">ORDERDETAILS</a>
+			<a href="answers.html" class="navbutton">ANSWERS</a>
+        </div>
+		
+		<div class="heading">
+		<div class="box">
+        <div id="title">
+        	<h1 class="title">Structured Query Language (SQL)</h1>
+		</div>
+		</div>
+		</div>
+		
+		<div class="HDD">
+			<div id="general"> 
+			<h3>General</h3>
+				<p class="general">The goal of this webpage is to educate you on the way SQL works, including the commands, uses and elements. Each page on the website has a Check Your Learning section to test your knowledge on the tables presented.</p> 
+		</div>
+		<h2 class="sub-title2">SQL - What is it?</h2>
+		
+			<p>SQL - pronounced "ess-que-el", is a language build to help communicate with a data base. It is the most common way to create, manage & query a database. SQL can be embeded into other backend languages such as C++, Java and Python. </p>
+	
+			<h3>SQL Language Elements</h3>
+				<p><strong>CLAUSES</strong> - the clauses are components of the statements and the queries<br><br>
+
+				<strong>EXPRESSIONS</strong> - the expressions can produce scalar values or tables, which consist of columns and rows of data<br><br>
+				
+				<strong>PREDICATES</strong> - they specify conditions, which are used to limit the effects of the statements and the queries, or to change the program flow<br><br>
+
+				<strong>QUERIES</strong> - a query will retrieve data, based on a given criteria<br><br>
+
+				<strong>STATEMENTS</strong> - with the statements one can control transactions, program flow, connections, sessions, or diagnostics. In database systems the SQL statements are used for sending queries from a client program to a server where the databases are stored. In response, the server processes the SQL statements and returns replies to the client program. This allows users to execute a wide range of amazingly fast data manipulation operations from simple data inputs to complicated queries.</p>
+			
+			<h3>SQL Queries</h3>
+				<p>The SQL queires are the most essential and common SQL operations. Via these queries, users can search databases for needed data. SQL queries are executed with the SELECT statment, and can be made more specific with these clauses:<br><br>
+				<strong>SELECT *</strong> : is the most basic, allows you to call full tables
+				<br><strong>FROM</strong> : indicates the table where the search will be made 
+				<br><strong>WHERE</strong> : used to define rows, in whihc the search will be carried. All rows, for which the clause is not true, will be executed
+				<br><strong>ORDER BY</strong> : this is the only way to sort the results in SQL. Otherwise, they will be returned in a random order
+				<br><strong>AND, OR, NOT</strong> : These are used in comination with then WHERE clause. AND & OR are used to filter records, NOT displays a record if the condition(s) is NOT TRUE.
+				<br><strong>GROUP BY</strong> : groups the results returned into the specified groups
+				<br><strong>HAVING</strong> : is used after an aggregate function like GROUP BY because the WHERE command does not work in that situation. 
+				<br></p>
+			
+			<h3>SQL Data Definition</h3>
+				<p>Data definition allows the user to define new tables and elements.<br> <br>
+				<strong>CREATE</strong> : with this statement you can create a new table in an existing database.
+				<br><strong>LEFT JOIN</strong> : The LEFT JOIN keyword returns all records from the left table (table1), and the matched records from the right table (table2). The result is NULL from the right side, if there is no match.
+				<br><strong>INNER JOIN</strong> : selects records that have matching values in both tables.
+				</p>
+			
+			<h3>SQL Data Control</h3>
+				<p>SQL allows the user to define the access each of the table users can have to the actual table.<br><br>
+				<strong>CHECK</strong> : ensures that the owner is not NULL</p>
+			
+			<h3>Next Steps</h3>
+			<p>Now you know the basics of SQL. Check out the other pages to learn how to apply your knowledge.</p>
+		
+		</div>		
+    </body>
+</html> 

@@ -1,0 +1,40 @@
+<!--Krystyna Poremba 20719178-->
+<!DOCTYPE html>
+<html style="width:fit-content;">
+    <head>
+		<meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="images/sql.png"/> 
+        <title>SQL</title>
+        <link rel="Stylesheet" href="style.css" type="text/css" href="scripts.js"> 
+		<script src="scripts2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+		<div id="nav"> 
+            <a href="home.html" class="navbutton">HOME</a>
+            <a href="customers.html" class="navbutton">CUSTOMERS</a>
+			<a href="employees.html" class="navbutton">EMPLOYEES</a>
+			<a id="alive" href="orders.html" class="navbutton">ORDERS</a>
+			<a href="orderDetails.html" class="navbutton">ORDERDETAILS</a>
+			<a href="answers.html" class="navbutton">ANSWERS</a>
+        </div>
+		<div class="box">
+        <div id="title">
+        	<h1 class="title">SQL - ANSWER KEY</h1>
+		</div>
+		</div>
+		
+		<div class="HDD">
+			<h3>Customers Question</h3>
+				<p>SELECT CustomerID, CustomerName FROM Customers WHERE CustomerID IS 5;</p>
+			<h3>Employees Question</h3>
+				<p>SELECT EmployeeId, LastName, FirstName FROM employees WHERE EmployeeID IS 1 OR EmployeeID IS 2 ORDER BY FirstName;</p>
+			<h3>Orders Question</h3>
+				<p>SELECT CustomerName, Country, OrderID FROM Customers LEFT JOIN Orders on Orders.CustomerID = Customers.CustomerID WHERE Country is \"Mexico\";</p>
+			<h3>OrderDetails Question</h3>
+				<p>SELECT OrderDetailID, Orders.OrderID, Quantity, ShipperID FROM OrderDetails INNER JOIN Orders on OrderDetails.OrderID = Orders.OrderID WHERE ShipperID is 1;</p>
+		</div>
+	
+		<br/>
+    </body>
+</html> 

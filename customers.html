@@ -1,0 +1,133 @@
+<!--Krystyna Poremba 20719178-->
+<!DOCTYPE html>
+<html style="width:fit-content;">
+    <head>
+		<meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="images/sql.png"/> 
+        <title>SQL</title>
+        <link rel="Stylesheet" href="style.css" type="text/css" href="scripts2.js">
+		<script src="scripts2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+		<div id="nav"> 
+            <a href="home.html" class="navbutton">HOME</a>
+            <a id="alive" href="customers.html" class="navbutton">CUSTOMERS</a>
+			<a href="employees.html" class="navbutton">EMPLOYEES</a>
+			<a href="orders.html" class="navbutton">ORDERS</a>
+			<a href="orderDetails.html" class="navbutton">ORDERDETAILS</a>
+			<a href="answers.html" class="navbutton">ANSWERS</a>
+        </div>
+		<div class="box">
+        <div id="title">
+        	<h1 class="title">SQL - Customers Table</h1>
+		</div>
+		</div>
+		
+		<div class="HDD">
+			<h3>How it Works</h3>
+				<p>This section focuses on the Customers table and the SELECT, FROM, WHERE and IS commands. <br><br> Become familiar with the different field names and number of records. In the Learning Check, you will use the SELECT, FROM, WHERE and IS to modify the table.</p>
+		
+		
+       <div class="bottom">
+		<h2 class = "special-title">Customers Table</h2>
+		<table border="1" width="100%" id="tab"> 
+                <tr> 
+                    <th> CustomerID</th>
+                    <th> CustomerName</th>
+                    <th> ContactName</th> 
+                    <th> Address</th> 
+					<th> City</th> 
+					<th> PostalCode</th>
+                    <th> Country</th> 
+                </tr>
+                <tr> 
+                    <td> 1 </td>
+                    <td> Alfreds Futterkiste</td>
+                    <td> Maria Anders</td>
+                    <td> Obere Str. 57</td>
+					<td> Berlin</td>
+                    <td> 12209</td>
+					<td> Germany</td>
+                </tr>
+                <tr> 
+                    <td> 2 </td>
+                    <td> Ana Trujillo Emparedados y helados</td>
+                    <td> Ana Trujillo</td>
+                    <td> Avda. de la Constitución 2222</td>
+					<td> México D.F.</td>
+                    <td> 05021</td>
+					<td> Mexico</td>
+                </tr>
+                <tr> 
+                    <td> 3 </td>
+                    <td> Antonio Moreno Taquería</td>
+                    <td> Antonio Moreno</td>
+                    <td> Mataderos 2312</td>
+					<td> México D.F.</td>
+                    <td> 05023</td>
+					<td> Mexico</td>
+                </tr>
+                <tr> 
+                    <td> 4 </td>
+                    <td> Around the Horn</td>
+                    <td> Thomas Hardy</td>
+                    <td> 120 Hanover Sq.</td>
+					<td> London</td>
+                    <td> WA1 1DP</td>
+					<td> UK</td>
+                </tr>
+			 <tr> 
+                    <td> 5 </td>
+                    <td> Berglunds snabbköp</td>
+                    <td> Christina Berglund</td>
+                    <td> Berguvsvägen 8</td>
+					<td> Luleå</td>
+                    <td> S-958 22</td>
+					<td> Sweden</td>
+                </tr>
+                <tr> 
+                    <td> 6 </td>
+                    <td> Blauer See Delikatessen</td>
+                    <td> Hanna Moos</td>
+                    <td> 1Forsterstr. 57</td>
+					<td> Mannheim</td>
+                    <td> 68306</td>
+					<td> Germany</td>
+                </tr>
+            </table>
+
+		   
+		   <h3>Learning Check</h3>
+		   <div class="bbox">
+		   <div>
+			   Lets see if you can generate the table below:
+			</div><br/>
+		<table border="1" width="100%" id="tab"> 
+                <tr> 
+                    <th> CustomerID</th>
+                    <th> CustomerName</th>
+                </tr>
+			 <tr> 
+                    <td> 5 </td>
+                    <td> Berglunds snabbköp</td>
+                </tr>
+            </table>
+			   <br/>
+			   <div>
+			   Please use SELECT, FROM, WHERE, and IS in your answer. Remember the table name is 'Customers' and dont forget a semicolon at the end. Please enter your answer in the field below and click Submit.
+			</div>
+			   
+		   <form id="quiz-wrap">
+			    <br/><br/><textarea cols="40" 
+       rows="5" class="text-input"></textarea>
+			   <h1 id="message">
+			   </h1>
+			   <div id="question" class="customers"/>
+			   </form>
+			    </div>
+		   <p>Can't figure it out? Check out the <a href="answers.html" class="button">ANSWERS PAGE</a></p>
+		</div>
+		</div>
+    </body>
+</html> 

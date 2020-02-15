@@ -1,0 +1,266 @@
+/* Color Theme Swatches in Hex */
+.Greenox-Urban-Residence-1-hex { color: #5B9ED9; } /*darker blue*/
+.Greenox-Urban-Residence-2-hex { color: #94C6F2; } /*lighter blue*/
+.Greenox-Urban-Residence-3-hex { color: #467302; } /*darker green*/
+.Greenox-Urban-Residence-4-hex { color: #C1D90D; }/*lighter green*/
+.Greenox-Urban-Residence-5-hex { color: #26120B; } /*brown*/
+
+/* Color Theme Swatches in Hex */
+.microsoft-1-hex { color: #80CC28; } /*green*/
+.microsoft-2-hex { color: #FBBC09; } /*yellow*/ #F7D129
+.microsoft-3-hex { color: #00ADEF; } /*blue*/
+.microsoft-4-hex { color: #F14C15; } /*orange*/
+.microsoft-5-hex { color: #000000; } /*black*/
+
+body{
+	background-color: #FFFFFF;
+	margin: 0;
+}
+
+#nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #80CC28;
+	position: sticky;
+	top: 0;
+	padding: 16px;
+}
+
+.navbutton{
+	color: #FFFFFF;
+	align-content: center;
+	text-align: center;
+	flex-basis: 200px;
+	font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 700px){
+	#nav{
+		flex-wrap: wrap;
+	}
+}
+
+.text-input{
+	align-self: center;
+	width: 100%;
+}
+
+.HDD{
+	display: inline-block;
+    width: 95%;
+    float: left;
+    padding: 2%;
+	border-width: thin;
+	border-color: black;
+	text-align: center;
+}
+
+#general{
+	align-content: center;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-top: -40px;
+}
+
+.final {
+	width: 50%;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button {
+	background-color: #F14C15;
+	padding: 10px;
+	margin: 25px;
+	border-radius: 10px;
+	color: black;
+	white-space: nowrap;
+	text-decoration: unset;
+	border: 2px solid black;
+	color: white;
+	display: inline-block;
+}
+
+.pic1 {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gif {
+	height: 300px;
+	width: 100%;
+}
+
+.heading{
+	text-align: center;
+}
+
+.title {
+	color: white;
+    font-family: 'Roboto', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+	text-decoration-line: none;
+	text-align: center;
+}
+
+.box {
+	background-color: #80CC28;
+	margin-top: -21px; 
+	padding-top: 10px;
+}
+
+h2 {
+	color: #00ADEF;
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+h3 {
+	color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: #00ADEF;
+}
+
+p {
+	font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    padding-bottom: 10px;	
+}
+
+a{text-decoration: unset;}
+
+.bottom {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	width:95%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #ffffff}
+tr:nth-child(odd){background-color: lightgray}
+th {
+    background-color: #F7D129;
+    color: black;
+}
+td {
+	text-align: left;
+}
+#head{
+	background-color: #F7D129;
+    color: black;
+	text-align: center;
+}
+
+.bbox {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*quiz*/
+/* The entire quiz form */
+.return {
+	color: #F7D129;
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: black;
+	text-decoration-line: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 19px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+img {
+	align-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#quiz-wrap {
+	text-align: center;
+}
+
+.special-title{
+	float:left;
+	width: 100%
+}
+
+/* Responsive Web Design */
+@media (max-width: 600px) {
+     .big-container {
+         display: none;
+     }
+ }
+@media (min-width: 600px) {
+     .small-container {
+         display: none;
+     }
+ }
+
+@media screen and (max-width: 600px){
+    .HDD {
+        display: block;
+        width: 90%;
+        float: left;
+        font-size: 1em;
+    }
+    .SSD {
+        display: block;
+        width: 90%;
+        float: left;
+        font-size: 1em;
+    }
+    h2 {
+        color: #F7D129;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+    }
+    p {
+        font-family: 'Libre Baskerville', serif;
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+	
+	.pic1 {
+		width: 60%;
+	}
+	table {
+    	border-collapse: collapse;
+    	width: 100%;
+	}
+	.button {
+		background-color: #F7D129;
+		padding: 7px;
+		margin: 25px;
+		border-radius: 10px;
+		color: black;
+		text-decoration: unset;
+	}
+
+	#quiz-wrap h1 {
+  		font-size: 22px;
+  		margin: 5px 0;
+	}
+}

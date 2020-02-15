@@ -1,0 +1,197 @@
+<!--Krystyna Poremba 20719178-->
+<!DOCTYPE html>
+<html style="width:fit-content;">
+    <head>
+		<meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="images/sql.png"/> 
+        <title>SQL</title>
+        <link rel="Stylesheet" href="style.css" type="text/css" href="scripts.js"> 
+		<script src="scripts2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+		<div id="nav"> 
+            <a href="home.html" class="navbutton">HOME</a>
+            <a href="customers.html" class="navbutton">CUSTOMERS</a>
+			<a href="employees.html" class="navbutton">EMPLOYEES</a>
+			<a id="alive" href="orders.html" class="navbutton">ORDERS</a>
+			<a href="orderDetails.html" class="navbutton">ORDERDETAILS</a>
+			<a href="answers.html" class="navbutton">ANSWERS</a>
+        </div>
+		<div class="box">
+        <div id="title">
+        	<h1 class="title">SQL - Orders Table</h1>
+		</div>
+		</div>
+		
+		<div class="HDD">
+			<h3>How it Works</h3>
+				<p>This section focuses on the Order table and the LEFT JOIN command. <br><br> Become familiar with the different field names and number of records. Below the Order table is the Customers table you used before. In the Learning Check, you will use the LEFT JOIN command to join these two tables into a new table.</p>
+
+		
+       <div class="bottom">
+		<h2 class = "special-title">Orders Table</h2>
+		<table border="1" width="100%" id="tab"> 
+                <tr> 
+                    <th> OrderID</th>
+                    <th> CustomerID</th>
+                    <th> EmployeeID</th> 
+                    <th> OrderDate</th> 
+					<th> ShipperID</th>
+                </tr>
+                <tr> 
+                    <td> 10278 </td>
+                    <td> 5</td>
+                    <td> 8</td>
+                    <td> 1996-08-12</td>
+					<td> 2</td>
+                </tr>
+                <tr> 
+                    <td> 10280</td>
+                    <td> 5</td>
+                    <td> 2</td>
+                    <td> 1996-08-14</td>
+					<td> 1</td>
+                </tr>
+                <tr> 
+                    <td> 10308 </td>
+                    <td> 2</td>
+                    <td> 7</td>
+                    <td> 1996-09-18</td>
+					<td> 3</td>
+                </tr>
+                <tr> 
+                    <td> 10355</td>
+                    <td> 4</td>
+                    <td> 6</td>
+					<td> 1996-11-15</td>
+					<td> 1</td>
+                </tr>
+			 <tr> 
+                    <td> 10365 </td>
+                    <td> 3</td>
+                    <td> 3</td>
+					<td> 1996-11-27</td>
+					<td> 2</td>
+                </tr>
+                <tr> 
+                    <td> 10383</td>
+                    <td> 4</td>
+					<td> 8</td>
+                    <td> 1996-12-16</td>
+					<td> 3</td>
+                </tr>
+				<tr> 
+                    <td> 10384 </td>
+                    <td> 5</td>
+					<td> 3</td>
+                    <td> 1996-12-16</td>
+					<td> 3</td>
+                </tr>
+            </table>
+		   		<h2 class = "special-title">Customers Table</h2>
+		<table border="1" width="100%" id="tab"> 
+                <tr> 
+                    <th> CustomerID</th>
+                    <th> CustomerName</th>
+                    <th> ContactName</th> 
+                    <th> Address</th> 
+					<th> City</th> 
+					<th> PostalCode</th>
+                    <th> Country</th> 
+                </tr>
+                <tr> 
+                    <td> 1 </td>
+                    <td> Alfreds Futterkiste</td>
+                    <td> Maria Anders</td>
+                    <td> Obere Str. 57</td>
+					<td> Berlin</td>
+                    <td> 12209</td>
+					<td> Germany</td>
+                </tr>
+                <tr> 
+                    <td> 2 </td>
+                    <td> Ana Trujillo Emparedados y helados</td>
+                    <td> Ana Trujillo</td>
+                    <td> Avda. de la Constitución 2222</td>
+					<td> México D.F.</td>
+                    <td> 05021</td>
+					<td> Mexico</td>
+                </tr>
+                <tr> 
+                    <td> 3 </td>
+                    <td> Antonio Moreno Taquería</td>
+                    <td> Antonio Moreno</td>
+                    <td> Mataderos 2312</td>
+					<td> México D.F.</td>
+                    <td> 05023</td>
+					<td> Mexico</td>
+                </tr>
+                <tr> 
+                    <td> 4 </td>
+                    <td> Around the Horn</td>
+                    <td> Thomas Hardy</td>
+                    <td> 120 Hanover Sq.</td>
+					<td> London</td>
+                    <td> WA1 1DP</td>
+					<td> UK</td>
+                </tr>
+			 <tr> 
+                    <td> 5 </td>
+                    <td> Berglunds snabbköp</td>
+                    <td> Christina Berglund</td>
+                    <td> Berguvsvägen 8</td>
+					<td> Luleå</td>
+                    <td> S-958 22</td>
+					<td> Sweden</td>
+                </tr>
+                <tr> 
+                    <td> 6 </td>
+                    <td> Blauer See Delikatessen</td>
+                    <td> Hanna Moos</td>
+                    <td> 1Forsterstr. 57</td>
+					<td> Mannheim</td>
+                    <td> 68306</td>
+					<td> Germany</td>
+                </tr>
+            </table>
+		   <h3>Learning Check</h3>
+		   <div class="bbox">
+		   <div>
+			   Lets see if you can generate the table below:
+			</div><br/>
+		<table border="1" width="100%" id="tab"> 
+                <tr> 
+                    <th> CustomerName</th>
+                    <th> Country</th>
+					<th> OrderID</th>
+                </tr>
+			 	<tr> 
+                    <td> Ana Trujillo Emparedados y helados</td>
+                    <td> Mexico</td>
+				 	<td> 10308</td>
+                </tr>
+				<tr> 
+                    <td> Antonio Moreno Taquería</td>
+                    <td> Mexico</td>
+				 	<td> 10365</td>
+                </tr>
+            </table>
+			   <br/>
+			   <div>
+			   Using the two tables above, use an LEFT JOIN command to create a table that looks like the one above. Remember the table name is 'Orders' and dont forget a semicolon at the end. Please enter your answer in the field below and click Submit.
+			</div>
+			   
+		   <form id="quiz-wrap">
+			    <br/><br/><textarea cols="40" 
+       rows="5" class="text-input"></textarea>
+			   <h1 id="message">
+			   </h1>
+			   <div id="question" class="orders"/>
+			   </form>
+			    </div>
+		   <p>Can't figure it out? Check out the <a href="answers.html" class="button">ANSWERS PAGE</a></p>
+		</div>
+					</div>
+    </body>
+</html> 

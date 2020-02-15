@@ -1,0 +1,160 @@
+<!--Krystyna Poremba 20719178-->
+<!DOCTYPE html>
+<html style="width:fit-content;">
+    <head>
+		<meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="images/sql.png"/> 
+        <title>SQL</title>
+        <link rel="Stylesheet" href="style.css" type="text/css" href="scripts.js"> 
+		<script src="scripts2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+		<div id="nav"> 
+            <a href="home.html" class="navbutton">HOME</a>
+            <a href="customers.html" class="navbutton">CUSTOMERS</a>
+			<a href="employees.html" class="navbutton">EMPLOYEES</a>
+			<a href="orders.html" class="navbutton">ORDERS</a>
+			<a id="alive" href="orderDetails.html" class="navbutton">ORDERDETAILS</a>
+			<a href="answers.html" class="navbutton">ANSWERS</a>
+        </div>
+		<div class="box">
+        <div id="title">
+        	<h1 class="title">SQL - OrderDetails Table</h1>
+		</div>
+		</div>
+		
+		<div class="HDD">
+			<h3>How it Works</h3>
+				<p>This section focuses on the OrderDetails table and the INNER JOIN command. <br><br> Become familiar with the different field names and number of records. Below the OrderDetails table is the Orders table you used before. In the Learning Check, you will use the INNER JOIN command to join these two tables into a new table.</p>
+		
+		
+       <div class="bottom">
+		<h2 class = "special-title">OrderDetails Table</h2>
+		<table border="1" width="100%" id="tab"><tbody>
+			   <tr>
+				   <th>OrderDetailID</th>
+				   <th>OrderID</th>
+				   <th>ProductID</th>
+				   <th>Quantity</th>
+			   </tr><tr><td>79</td><td>10278</td><td>44</td><td>16</td></tr><tr><td>80</td><td>10278</td><td>59</td><td>15</td></tr><tr><td>81</td><td>10278</td><td>63</td><td>8</td></tr><tr><td>82</td><td>10278</td><td>73</td><td>25</td></tr><tr><td>84</td><td>10280</td><td>24</td><td>12</td></tr><tr><td>85</td><td>10280</td><td>55</td><td>20</td></tr><tr><td>86</td><td>10280</td><td>75</td><td>30</td></tr><tr><td>162</td><td>10308</td><td>69</td><td>1</td></tr><tr><td>163</td><td>10308</td><td>70</td><td>5</td></tr><tr><td>285</td><td>10355</td><td>24</td><td>25</td></tr><tr><td>286</td><td>10355</td><td>57</td><td>25</td></tr><tr><td>314</td><td>10365</td><td>11</td><td>24</td></tr><tr><td>358</td><td>10383</td><td>13</td><td>20</td></tr><tr><td>359</td><td>10383</td><td>50</td><td>15</td></tr><tr><td>360</td><td>10383</td><td>56</td><td>20</td></tr><tr><td>361</td><td>10384</td><td>20</td><td>28</td></tr><tr><td>362</td><td>10384</td><td>60</td><td>15</td></tr></tbody></table>
+		   <h2 class = "special-title">Orders Table</h2>
+		<table border="1" width="100%" id="tab"> 
+                <tr> 
+                    <th> OrderID</th>
+                    <th> CustomerID</th>
+                    <th> EmployeeID</th> 
+                    <th> OrderDate</th> 
+					<th> ShipperID</th>
+                </tr>
+                <tr> 
+                    <td> 10278 </td>
+                    <td> 5</td>
+                    <td> 8</td>
+                    <td> 1996-08-12</td>
+					<td> 2</td>
+                </tr>
+                <tr> 
+                    <td> 10280</td>
+                    <td> 5</td>
+                    <td> 2</td>
+                    <td> 1996-08-14</td>
+					<td> 1</td>
+                </tr>
+                <tr> 
+                    <td> 10308 </td>
+                    <td> 2</td>
+                    <td> 7</td>
+                    <td> 1996-09-18</td>
+					<td> 3</td>
+                </tr>
+                <tr> 
+                    <td> 10355</td>
+                    <td> 4</td>
+                    <td> 6</td>
+					<td> 1996-11-15</td>
+					<td> 1</td>
+                </tr>
+			 <tr> 
+                    <td> 10365 </td>
+                    <td> 3</td>
+                    <td> 3</td>
+					<td> 1996-11-27</td>
+					<td> 2</td>
+                </tr>
+                <tr> 
+                    <td> 10383</td>
+                    <td> 4</td>
+					<td> 8</td>
+                    <td> 1996-12-16</td>
+					<td> 3</td>
+                </tr>
+				<tr> 
+                    <td> 10384 </td>
+                    <td> 5</td>
+					<td> 3</td>
+                    <td> 1996-12-16</td>
+					<td> 3</td>
+                </tr>
+            </table>
+		    <h3>Learning Check</h3>
+		   <div class="bbox">
+		   <div>
+			   Lets see if you can generate the table below:
+			</div><br/>
+		<table border="1" width="100%" id="tab"> 
+                <tr> 
+                    <th> OrderDetailID</th>
+                    <th> OrderID</th>
+					<th> Quantity</th>
+					<th> ShipperID</th>
+                </tr>
+			 	<tr> 
+                    <td> 84</td>
+                    <td> 10280</td>
+				 	<td> 12</td>
+					<td> 1</td>
+                </tr>
+				<tr> 
+                    <td> 85</td>
+                    <td> 10280</td>
+				 	<td> 20</td>
+					<td> 1</td>
+                </tr>
+				<tr> 
+                    <td> 86</td>
+                    <td> 10280</td>
+				 	<td> 30</td>
+					<td> 1</td>
+                </tr>
+				<tr> 
+                    <td> 285</td>
+                    <td> 10355</td>
+				 	<td> 25</td>
+					<td> 1</td>
+                </tr>
+				<tr> 
+                    <td> 286</td>
+                    <td> 10355</td>
+				 	<td> 25</td>
+					<td> 1</td>
+                </tr>
+            </table>
+			   <br/>
+			   <div>
+			   Using the two tables above, use an INNER JOIN command to create a table that looks like the one above. Remember the table name is 'Orders' and dont forget a semicolon at the end. Please enter your answer in the field below and click Submit.
+			</div>
+			   
+		   <form id="quiz-wrap">
+			    <br/><br/><textarea cols="40" 
+       rows="5" class="text-input"></textarea>
+			   <h1 id="message">
+			   </h1>
+			   <div id="question" class="orderDetails"/>
+			   </form>
+			    </div>
+		   <p>Can't figure it out? Check out the <a href="answers.html" class="button">ANSWERS PAGE</a></p>
+		</div>
+		</div>
+    </body>
+</html> 
