@@ -1,5 +1,5 @@
-## CS330A1
-# Storage Device Comparison
+## CS330A2
+# SQL
 
 ## External Research
 For my Assignment I chose the topic of comparing Hard Disk Drives to Solid State Drives. I created a website that compares the two forms of storage with a check your learning quiz at the end to ensure users understand the information. I chose the HDD vs SSD topic because it was one not mentioned much in class, and I felt that it was an interesting topic to expand on. This meant a lot of my learning was from external research to ensure the topic was covered fully. Multiple websites and videos were consulted to further the learning of the website, please see the list of links at the end of the document. 
